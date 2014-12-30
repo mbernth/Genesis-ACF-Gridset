@@ -1,0 +1,78 @@
+/* Gridset
+--------------------------------------------- */
+
+	.gridcontainer {
+		margin: 0 auto;
+		width: 100%;
+		float: left;
+		display:block;
+	}
+
+	.gridcontainer [class*="gridcoll"]{
+		display:block;
+		float:left;
+		margin-right:5%;
+		margin-bottom:20px;
+	}
+
+	.gridcoll1 {
+		width:100%;
+	}
+	.gridcoll2 {
+		width:47.5%;
+	}
+	.gridcoll3 {
+		width:30%;
+	}
+	.gridcoll4 {
+		width:21.25%;
+	}
+	.gridcoll5 {
+		width:16%;
+	}
+	.gridcoll6 {
+		width:12.5%;
+	}
+
+	.gridcoll1:nth-child(1n),
+	.gridcoll2:nth-child(2n),
+	.gridcoll3:nth-child(3n),
+	.gridcoll4:nth-child(4n),
+	.gridcoll5:nth-child(5n),
+	.gridcoll6:nth-child(6n){
+		margin-right:0;
+	}
+
+@media only screen and (max-width: 1024px) {
+
+/* Gridset
+--------------------------------------------- */
+	
+	.gridcoll4 {
+		width:47.5%;
+	}
+	.gridcoll6 {
+		width:30%;
+	}
+	
+	.gridcoll4:nth-child(2n),
+	.gridcoll6:nth-child(3n){
+		margin-right:0;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+
+/* Gridset
+--------------------------------------------- */
+	
+	.gridcoll1,
+	.gridcoll2,
+	.gridcoll3,
+	.gridcoll4,
+	.gridcoll5,
+	.gridcoll6 {
+		margin-right:0;
+		width:100%;
+	}
+}
